@@ -44,19 +44,23 @@
         </a>
       </li>
     </ul>
+    <a class="header__user" href="#">
+      Кабинет пользователя
+    </a>
   </nav>
-  <a class="header__user" href="#">
-    Кабинет пользователя
-  </a>
 </header>
 <main>
   <h1 class="visually-hidden">
-    Главная страница яхт клуба «Yacht Club».
+    Главная страница яхт клуба.
   </h1>
   <section class="promo">
     <h2 class="promo__title">
       Под парусом <span class="promo__contrast-word">вместе</span>
     </h2>
+    <div class="slider">
+      <img class="slider__picture" src="img/promo/promo-photo-1.jpg" width="1070" height="426"
+           alt="Фото яхты под  Солнцем.">
+    </div>
     <button class="promo__slider-control" type="button">
       Назад
     </button>
@@ -83,37 +87,49 @@
     <h2 class="visually-hidden">
       Блог.
     </h2>
-    <article class="blog__article">
-      <h3 class="blog__title">
-        Стань частью команды
-      </h3>
-      <time class="blog__date" datetime="2020-10-20">20 октября</time> - <time class="blog__date"
-                                                                               datetime="2021-04-19">19 апреля</time>
-      <p class="blog__text">
-        Хотите попробовать себя в яхтинге? Наш клуб готов стать их воротами в морскую культуру!
-      </p>
-      <a class="blog__link" href="#">
-        Подробнее.
-      </a>
-      <img class="blog__image" src="img/blog/blog-photo-1.jpg" width="600" height="262"
-           alt="Смотрящий в бинокль человек на яхте.">
-    </article>
-    <article class="blog__article">
-      <h3 class="blog__title">
-        Рожденные в воде
-      </h3>
-      <time class="blog__date" datetime="2020-10-26">26 октября</time> - <time class="blog__date"
-                                                                               datetime="2021-03-31">31 марта</time>
-      <p class="blog__text">
-        Подарите вашим детям чувство свободы, независимости, а также вкус жизни. Мир ярких эмоций и неописуемых
-        ощущений!
-      </p>
-      <a class="blog__link" href="#">
-        Подробнее.
-      </a>
-      <img class="blog__image" src="img/blog/blog-photo-2.jpg" width="500" height="252"
-           alt="Дети на палубе яхты.">
-    </article>
+    <ul class="blog__list">
+      <li class="blog__item">
+        <article class="blog__article">
+          <h3 class="blog__title">
+            Стань частью команды
+          </h3>
+          <p class="blog__date-wrapper">
+            <time class="blog__date" datetime="2020-10-20">20 октября</time> - <time class="blog__date"
+                                                                                      datetime="2021-04-19">19
+            апреля</time>
+          </p>
+          <p class="blog__text">
+            Хотите попробовать себя в яхтинге? Наш клуб готов стать их воротами в морскую культуру!
+          </p>
+          <img class="blog__image" src="img/blog/blog-photo-1.jpg" width="600" height="262"
+          alt="Смотрящий в бинокль человек на яхте.">
+          <a class="blog__link" href="#">
+            Подробнее
+          </a>
+        </article>
+      </li>
+      <li class="blog__item">
+        <article class="blog__article">
+          <h3 class="blog__title">
+            Рожденные в воде
+          </h3>
+          <p class="blog__date-wrapper">
+            <time class="blog__date" datetime="2020-10-26">26 октября</time> - <time class="blog__date"
+                                                                                     datetime="2021-03-31">31
+            марта</time>
+          </p>
+          <p class="blog__text">
+            Подарите вашим детям чувство свободы, независимости, а также вкус жизни. Мир ярких эмоций и неописуемых
+            ощущений!
+          </p>
+          <img class="blog__image" src="img/blog/blog-photo-2.jpg" width="500" height="252"
+               alt="Дети на палубе яхты.">
+          <a class="blog__link" href="#">
+            Подробнее
+          </a>
+        </article>
+      </li>
+    </ul>
   </section>
   <section class="events">
     <h2 class="events__title">
@@ -121,16 +137,40 @@
     </h2>
     <ul class="events__list">
       <li class="events__item">
-        Бизнес-встречи
+        <a class="events__link" href="#">
+          <img class="events__picture" src="img/events/category-photo-3.jpg" width="270" height="325"
+               alt="Рукопожатие партнеров.">
+          <p class="events__item-text">
+            Бизнес-встречи
+          </p>
+        </a>
       </li>
       <li class="events__item">
-        Свадьбы
+        <a class="events__link" href="#">
+          <img class="events__picture" src="img/events/category-photo-1.jpg" width="270" height="325"
+               alt="Свадебный букет.">
+          <p class="events__item-text">
+            Свадьбы
+          </p>
+        </a>
       </li>
       <li class="events__item">
-        Дни рождения
+        <a class="events__link" href="#">
+          <img class="events__picture" src="img/events/category-photo-2.jpg" width="270" height="325"
+               alt="Девушка с воздушными шариками на палубе.">
+          <p class="events__item-text">
+            Дни рождения
+          </p>
+        </a>
       </li>
       <li class="events__item">
-        Соревнования
+        <a class="events__link" href="#">
+          <img class="events__picture" src="img/events/category-photo-4.jpg" width="270" height="325"
+               alt="Множество яхт в бухте.">
+          <p class="events__item-text">
+            Соревнования
+          </p>
+        </a>
       </li>
     </ul>
   </section>
@@ -138,24 +178,32 @@
     <h2 class="feel__title">
       Почувствуйте атмосферу
     </h2>
-    <video class="feel__video" poster="img/feel/gallery-photo-1.jpg" preload="metadata" width="630"
+    <ul class="feel__list">
+      <li class="feel__item">
+        <video class="feel__video" poster="img/feel/gallery-photo-2.jpg" preload="metadata" width="400"
+               height="265">
+        </video>
+        <button class="feel__play-button" type="button">
+          Запустить видео
+        </button>
+      </li>
+      <li class="feel__item">
+        <video class="feel__video" poster="img/feel/gallery-photo-1.jpg" preload="metadata" width="630"
            height="359">
     </video>
-    <button class="feel__play-button" type="button">
-      Запустить видео
-    </button>
-    <video class="feel__video" poster="img/feel/gallery-photo-2.jpg" preload="metadata" width="630"
-           height="359">
+        <button class="feel__play-button" type="button">
+          Запустить видео
+        </button>
+      </li>
+      <li class="feel__item">
+        <video class="feel__video" poster="img/feel/gallery-photo-3.jpg" preload="metadata" width="381"
+           height="264">
     </video>
-    <button class="feel__play-button" type="button">
-      Запустить видео
-    </button>
-    <video class="feel__video" poster="img/feel/gallery-photo-3.jpg" preload="metadata" width="630"
-           height="359">
-    </video>
-    <button class="feel__play-button" type="button">
-      Запустить видео
-    </button>
+        <button class="feel__play-button" type="button">
+          Запустить видео
+        </button>
+      </li>
+    </ul>
   </section>
   <section class="service">
     <h2 class="service__title">
@@ -206,92 +254,108 @@
     <h2 class="news__title">
       Новости
     </h2>
-    <article class="news">
-      <h3 class="news__title">
-        Итоги регаты Sochi Race Week 2020
-      </h3>
-      <figure class="news__figure">
-        <img class="news__image" src="img/news/news-photo-1.jpg" alt="Фото победителя регаты шкипера Ивана Кулешова.">
-        <figcaption class="news__caption">Победитель регаты шкипер Иван Кулешов</figcaption>
-      </figure>
-      <p class="news__text">
-        Свыше сотни участников собирались на побережье Сочи, чтобы посоревноваться за главный приз. В соревнованиях
-        приняли участие как новички, так и <s>профессионалы</s> моряки, имеющие за плечами немалый опыт.
-      </p>
-      <p class="news__text">
-        На протяжении всего плавания нас сопровождало солнце прекрасная погода, в отдельные дни ветер до 20 узлов.
-        Регата была прекрасно организована, 135 яхтсменов, 12 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.
-      </p>
-      <p class="news__text">
-        Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году остановившаяся в одном
-        шаге от победы, а в этом сезоне опередившая ближайшего соперника — экипаж «Восток 35» — на <s>12 баллов</s> 5
-        баллов.
-      </p>
-      <p class="news__text">
-        Поздравляем победителей и ждем все участников снова на осенних регатах!
-      </p>
-      <img class="news__author-photo" src="img/news/author-125.jpg" width="240" height="240" alt="Фото автора новости.">
-      <cite class="news__author">
-        Артем Колесников
-      </cite>
-      <time class="news__date" datetime="2020-06-20">20.06.2020</time>
-      <a class="news__link" href="#">
-        Подробнее.
-      </a>
-    </article>
-    <article class="news">
-      <h3 class="news__title">
-        Выставка Sochi Boat Show
-      </h3>
-      <figure class="news__figure">
-        <img class="news__image" src="img/news/news-photo-2.jpg" alt="Яхта Golsling 3.15">
-        <figcaption class="news__caption">Участник выставки – яхта Golsling 3.15</figcaption>
-      </figure>
-      <p class="news__text">
-        Выставка катеров и яхт Sochi Boat Show пройдет с 19 по 29 июля 2020 года в нашем яхт-клубе.
-      </p>
-      <p class="news__text">
-        В программе будет демонстрация и тест-драйвы водомоторной техники, яркое шоу и спортивная регата. Ждем всех
-        желающих!
-      </p>
-      <img class="news__author-photo" src="img/news/author-542.jpg" width="240" height="240" alt="Фото автора новости.">
-      <cite class="news__author">
-        Денис Иванов
-      </cite>
-      <time class="news__date" datetime="2020-06-15">15.06.2020</time>
-      <a class="news__link" href="#">
-        Подробнее.
-      </a>
-    </article>
-    <article class="news">
-      <h3 class="news__title">
-        Регате быть!
-      </h3>
-      <figure class="news__figure">
-        <img class="news__image" src="img/news/news-photo-1.jpg" alt="Фото участницы регаты 2019 Ирины Петровой.">
-        <figcaption class="news__caption">Участница регаты 2019 Ирина Петрова</figcaption>
-      </figure>
-      <p class="news__text">
-        Из-за карантина весенние регаты пришлось перенести, но мы надеялись, что удастся провести летние соревнования.
-      </p>
-      <p class="news__text">
-        С радостью сообщаем, что летняя регата Sochi Summer Race состоится в августе!
-      </p>
-      <img class="news__author-photo" src="img/news/author-542.jpg" width="240" height="240" alt="Фото автора новости.">
-      <cite class="news__author">
-        Денис Иванов
-      </cite>
-      <time class="news__date" datetime="2020-06-10">10.06.2020</time>
-      <a class="news__link" href="#">
-        Подробнее.
-      </a>
-    </article>
+    <ul class="news__list">
+      <li class="news__item">
+        <article class="news">
+          <h3 class="news__title">
+            Итоги регаты Sochi Race Week 2020
+          </h3>
+          <figure class="news__figure">
+            <img class="news__image" src="img/news/news-photo-1.jpg" width="770" height="301"
+                 alt="Фото победителя регаты шкипера Ивана Кулешова.">
+            <figcaption class="news__caption">Победитель регаты шкипер Иван Кулешов</figcaption>
+          </figure>
+          <p class="news__text">
+            Свыше сотни участников собирались на побережье Сочи, чтобы посоревноваться за главный приз. В соревнованиях
+            приняли участие как новички, так и <s>профессионалы</s> <u>моряки, имеющие за плечами немалый опыт</u>.
+          </p>
+          <p class="news__text">
+            На протяжении всего плавания нас сопровождало солнце прекрасная погода, в отдельные дни ветер до 20 узлов.
+            Регата была прекрасно организована, 135 яхтсменов, 12 экипажей, 9 стран участниц, 4 гоночных дня, 3 дивизиона.
+          </p>
+          <p class="news__text">
+            Чемпионом регаты Sochi Race Week 2020 стала команда Fortune Sailing, в прошлом году остановившаяся в одном
+            шаге от победы, а в этом сезоне опередившая ближайшего соперника — экипаж «Восток 35» — на <s>12
+            баллов</s> <u>5
+            баллов</u>.
+          </p>
+          <p class="news__text">
+            Поздравляем победителей и ждем все участников снова на осенних регатах!
+          </p>
+          <a class="news__link" href="#">
+            Подробнее
+          </a>
+          <footer class="news__footer">
+            <a class="news__author" href="#">
+              Артем Колесников
+            </a>
+            <time class="news__date" datetime="2020-06-20">20.06.2020</time>
+            <img class="news__author-photo" src="img/news/author-125.jpg" width="240" height="240" alt="Фото автора новости.">
+          </footer>
+        </article>
+      </li>
+      <li class="news__item">
+        <article class="news">
+          <h3 class="news__title">
+            Выставка Sochi Boat Show
+          </h3>
+          <figure class="news__figure">
+            <img class="news__image" src="img/news/news-photo-2.jpg" width="370" height="130" alt="Яхта Golsling 3.15">
+            <figcaption class="news__caption">Участник выставки – яхта Golsling 3.15</figcaption>
+          </figure>
+          <p class="news__text">
+            Выставка катеров и яхт Sochi Boat Show пройдет с 19 по 29 июля 2020 года в нашем яхт-клубе.
+          </p>
+          <p class="news__text">
+            В программе будет демонстрация и тест-драйвы водомоторной техники, яркое шоу и спортивная регата. Ждем всех
+            желающих!
+          </p>
+          <a class="news__link" href="#">
+            Подробнее
+          </a>
+          <footer class="news__footer">
+            <a class="news__author" href="#">
+              Денис Иванов
+            </a>
+            <time class="news__date" datetime="2020-06-15">15.06.2020</time>
+            <img class="news__author-photo" src="img/news/author-542.jpg" width="240" height="240" alt="Фото автора новости.">
+          </footer>
+        </article>
+      </li>
+      <li class="news__item">
+        <article class="news">
+          <h3 class="news__title">
+            Регате быть!
+          </h3>
+          <figure class="news__figure">
+            <img class="news__image" src="img/news/news-photo-3.jpg" width="370" height="130"
+                 alt="Фото участницы регаты 2019 Ирины Петровой.">
+            <figcaption class="news__caption">Участница регаты 2019 Ирина Петрова</figcaption>
+          </figure>
+          <p class="news__text">
+            Из-за карантина весенние регаты пришлось перенести, но мы надеялись, что удастся провести летние соревнования.
+          </p>
+          <p class="news__text">
+            С радостью сообщаем, что летняя регата Sochi Summer Race состоится в августе!
+          </p>
+          <a class="news__link" href="#">
+            Подробнее
+          </a>
+          <footer class="news__footer">
+            <a class="news__author" href="#">
+              Денис Иванов
+            </a>
+            <time class="news__date" datetime="2020-06-10">10.06.2020</time>
+            <img class="news__author-photo" src="img/news/author-542.jpg" width="240" height="240" alt="Фото автора новости.">
+          </footer>
+        </article>
+      </li>
+    </ul>
   </section>
   <section class="contacts">
     <h2 class="contacts__title">
       Контакты
     </h2>
-    <img class="contacts__map" src="img/contacts/map.png" width="670" height="351" alt="Наше местоположение.">
     <dl class="contacts__list">
       <dt class="contacts__term">
         Адрес:
@@ -340,6 +404,7 @@
         </ul>
       </dd>
     </dl>
+    <img class="contacts__map" src="img/contacts/map.png" width="670" height="351" alt="Наше местоположение.">
   </section>
 </main>
 <footer class="footer">
